@@ -45,6 +45,8 @@ class ReadKey(object):
             f.write(cd.get_private_key('JIAcer/JIApriv.pfx','666666').decode())
             f.close()
 
+        print('甲乙的公私钥已导出，以安全存储在:\n甲公钥：Jpub_key.txt\n甲私钥：Jpriv_key.txt\n乙公钥：Ypub_key.txt\n乙私钥：Ypriv_key.txt')
+
         # with open('TeacherRoot.pfx', "rb") as f:
         #     private_key, certificate, additional_certificates = pkcs12.load_key_and_certificates(f.read(), b"666666")
         # print(certificate.not_valid_after)
